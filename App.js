@@ -29,8 +29,9 @@ export default function App() {
           console.log('selected day', day)
         }}
 
+        // markingType={'period'} Mark dot under selected date (gets rid of circle color for some reason)
         markedDates={{
-          [selected]: { selected: true, disableTouchEvent: true }
+          [selected]: { selected: true, disableTouchEvent: true, marked:"true", dotColor:"white"} //dot color is color of dot under selected date
         }}
 
         theme={{
